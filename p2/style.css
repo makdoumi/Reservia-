@@ -1,0 +1,1049 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none; 
+    color: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Begin of nav section */
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin: 2rem 0 2rem 3rem;
+  }
+  
+  
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    
+  }
+  
+  nav li {
+    padding: 2rem 2.5rem;
+  }
+  
+  nav li a {
+    color: #0065FC;
+    font-size: 1.2rem;
+  }
+  
+  #subscription-bold {
+    font-weight: bold;
+  }
+  
+  
+  #activity-grey a {
+    color: #000;
+  }
+  
+  #border-blue {
+    font-weight: bold;
+    border-width: 2px;
+    padding-left: 2rem;
+    border-top-style: solid;
+    border-top-color: #0065fc;
+  }
+  
+  
+  
+  @media (max-width: 750px) {
+  
+  
+    .logo {
+      margin: 1rem 3rem;
+    }
+    
+  
+  }
+  
+  @media (max-width: 650px) {
+  
+    .logo {
+      margin: 1rem 3rem;
+    }
+  
+    
+    nav li {
+      padding: 2rem 1rem;
+    }
+  
+  }
+  
+  
+  @media (max-width: 570px) {
+  
+  
+    .logo {
+      height: 4rem;
+      width: auto;
+      padding: 0;
+      margin: 1rem 1.5rem;
+    }
+  
+    nav ul {  
+      padding-top: 0;
+    }
+  
+    
+  
+  
+    #subscription-bold {
+      padding: 0;
+      margin: -3.5rem 0 0 0;
+      position: relative;
+      left: 75%;
+      
+    }
+    
+    #activity-grey {
+    border-bottom: 2px solid gray;
+    flex: 1 0 50%;
+    text-align: center;
+  
+    }
+  
+    #border-blue {
+      border-top: none;
+      border-bottom: 2px solid #0065FC;
+      flex: 1 0 50%;
+      text-align: center;
+    
+    }
+  
+    header {
+      display: inline;
+    }
+  
+    nav li {
+      padding: 1rem 1rem;
+    }
+  
+    
+  }
+  
+  
+  /* End of nav section */
+  
+  
+  /*Begin of Search section*/ 
+  
+  .search-section {
+    margin: 1rem 3rem;
+  }
+  
+  
+  .search-title {
+    font-size: 1.5rem;
+  }
+  
+  .search-subtitle {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+  
+  .search-wrap {
+    display: inline-flex;
+    flex-direction: row;
+    height: 40px;
+    margin: 1rem 0rem;
+  }
+  
+  
+  .btn-localisation {
+    position: relative;
+    border: none;
+    background-color: #F2F2F2;
+    width: 3rem;
+    border-radius: 10px 0 0 10px;
+    
+  }
+  
+  .fa-map-marker-alt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .input {
+    border: 0.1px solid #F2F2F2;
+    border-left: none;
+    width: 13rem;
+    color: black;
+    padding-left: 2rem;
+   
+    
+  }
+  
+  
+  .btn-search {
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;  
+    
+  }
+  
+  .btn-search:hover {
+    cursor: pointer;
+  }
+  
+  .fa-search {
+    visibility: collapse;
+  }
+    
+  
+  @media (max-width: 576px) {
+    .search-section {
+      margin: 1rem 1.5rem;
+    }
+  
+    .input {
+      width: 20rem;
+      
+    }
+    
+  }
+  @media (max-width: 380px) {
+    .fa-search {
+      visibility: visible;
+      position: relative;
+      border-radius: 8px 8px 8px 8px;
+      border: none;
+      background-color: #0065FC;
+      color: white;
+      padding: 10px;
+      margin-left: -1rem;
+    }
+    
+    .fa-search:hover { 
+      cursor: pointer;
+    }
+    
+    .btn-search {
+      visibility: collapse;
+    }
+    
+    .btn-localisation {
+      width: 3rem;
+      flex-shrink: 0;
+      
+    }
+    }
+  
+  
+  
+  
+  /* End of Search section*/ 
+  
+  
+  /* Filters */ 
+  
+  .filters {
+    display: flex;
+    margin: 3rem 0 0 0;
+  }
+  
+  .filter-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    top: 1rem;
+  }
+  
+  .filters a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .filters-buttons {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    
+  }
+  
+  .btn span {
+    margin: 1rem;
+  }
+  
+  .btn:hover span {
+    text-decoration: #0065FC;
+  }
+  
+  .btn i {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    color: #0065FC;
+    font-size: 12px; 
+    margin: -2px;
+    padding: 12px;
+  }
+  
+  .btn {
+    padding: 0;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    margin-right: 2rem;
+    font-weight: bold;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    
+  }
+  
+  .btn:hover {
+    background-color: #DEEBFF ;
+    color: black;
+    border: 2px solid transparent;
+  }
+  
+  
+  
+  .filter-title {
+    margin: 1rem 1rem 1rem 0;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+  
+    .filters {
+      display: inline;
+     }
+  }
+  
+  @media (max-width: 380px) {
+    
+    .description-filters i {
+      margin-left: 0;
+    }
+  
+  }
+  
+  
+  
+  /* Begin infos */ 
+  
+  .description-filters {
+    font-size: 1.1rem;
+    margin: 2rem 0rem 3rem 0;
+  }
+  
+  .fa-info-circle {
+    color: white;
+    background-color: #0065FC;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  /* End of Infos */
+  
+  
+  /* Wrap of "hebegerments à marseille" and "les plus populaires" section */ 
+  .wrap-section {
+    display: grid;
+    grid-template-columns: 62% 35%;
+    grid-row: 1;
+    justify-content: space-between;
+  }
+  
+  
+  @media (max-width: 1250px) {
+  
+    .wrap-section {
+      grid-template-columns: 98%;
+      justify-content: center;
+    }
+  
+  }
+  
+  
+  @media (max-width: 380px) {
+  
+    .wrap-section {
+      grid-template-columns: 98%;
+      justify-content: center;
+    }
+  
+  }
+  
+  
+  /* End Wrap of "hebegerments à marseille" and "les plus populaires" section */ 
+  
+  
+  /* Begin "hebergements à marseille" section */ 
+  
+  .lodgement-section {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 3rem;
+    
+  }
+  
+  
+  
+  .lodgement-title {
+    font-size: 1.8rem;
+    margin: 1rem 0 2rem 5rem;
+  }
+  
+   .lodgement-wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 40%);
+    height: 40rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-content: space-between;
+    justify-content: center;
+    
+  
+  }
+  
+  .lodgement {
+  
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px gray;
+    position: relative;
+    
+    
+  
+  }
+  
+  .lodgement:hover {
+    transform: scale(1.05);
+  }
+  
+  .lodgement img {
+    width: 98%;
+    height: 10rem;
+    margin: 0.3rem 0.3rem 0 0.3rem;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+  
+  } 
+  
+  
+  .lodgement-description {
+    margin: 0.1rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  
+  .lodgement-description h3 {
+    font-size: 1.4rem;
+    
+  }
+  
+  .lodgement-price {
+    font-size: 1.2rem;
+    margin: 0.1rem 0;
+  }
+  
+  .lodgement .fas {
+    color:#0065FC;
+    
+  }
+  
+  .lodgement .far {
+    color: grey;
+  }
+  
+  
+  .lodgement-stars {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    position: absolute;
+    bottom: 0.2rem;
+    display: flex;
+    flex-basis: 100%;
+  }
+  
+  .lodgement-more {
+    font-size: 1.8rem;
+    color: black;
+    margin: 1rem 3rem;
+    flex-basis: 100%;
+  }
+  
+  
+  
+  
+  /* lodgement media queries */ 
+  
+  
+  @media (max-width: 1250px) {
+  
+    .lodgement-wrap {
+      grid-area: 2 / 1 / 3 / 2;
+      width: 100%;
+      justify-content: center;
+      grid-template-columns: repeat(3, 31%);
+    }
+    
+    .lodgement-section {
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+    }
+  
+    .lodgement-title {
+      margin: 4rem 0 3rem 3rem;
+    }
+  
+    .lodgement img {
+      width: 98.5%;
+  
+    }
+  }
+  
+  
+  
+  @media (max-width: 850px) { 
+  
+    .lodgement-section {
+      height: 68rem;
+    }
+  
+    .lodgement-title {
+      margin: 4rem 0rem 3rem 4rem;
+    }
+  
+  
+    .lodgement-wrap {
+      grid-template-columns: repeat(2, 45%);
+      grid-template-rows: repeat(3, 40%);
+      margin: 0 0;
+      justify-content: center;
+    } 
+  
+    .lodgement-more {
+      margin-left: 0rem;
+    }
+  
+  }
+  
+  
+  
+  @media (max-width: 576px) { 
+  
+  
+    .lodgement-section {
+      height: 120rem;
+      background-color: white;
+    }
+  
+    .lodgement-title {
+      margin: 4rem 0rem 3rem 2rem;
+    }
+  
+  
+    .lodgement-wrap {
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(6, 40%); 
+      margin-left: 1rem;
+      justify-content: center;
+  
+    }
+  
+    .lodgement {
+      box-shadow: 0px 0px 6px 0px #0000003b;
+      width: 95%;
+     
+    }
+  
+    .lodgement img {
+      width: 99%;
+    }
+  
+    .lodgement-description {
+      height: 5rem;
+    }
+    
+    .lodgement-more {
+      margin-left: 1rem;
+    }
+  
+  }
+  
+  
+  @media (max-width: 380px) { 
+  
+    .lodgement-wrap {
+      margin: 0 0 0 0;
+      position: absolute;
+      left: 1rem;
+  
+    }
+  
+  }
+  
+  /* End "Hébergements à Marseille" section */ 
+  
+  
+  /* Begin "Les plus populaires" section */ 
+  
+  .popularity-section {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 2rem;
+  }
+  
+  .popularity-title {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 4rem;
+  }
+  
+  .popularity-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+  }
+  
+  .fa-chart-line {
+    margin: 1.5rem 2rem 0 0 ;
+    color: black;
+  }
+  
+  .popularity-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .popularity-lodgement {
+    display: flex; 
+    border-radius: 10px;
+    width: 85%;
+    height: 95%;
+    margin: 0.8rem auto;
+    background-color: white;
+    box-shadow: 0 0 10px 1px gray;
+    position: relative;
+    
+  }
+  
+  .popularity-lodgement a {
+    display: flex;
+    
+  }
+  
+  .popularity-lodgement:hover {
+    transform: scale(1.05);
+  }
+  
+  .popularity-lodgement img {
+    display: flex;
+    order: 0;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 10px 0 0 10px;
+    justify-content: center;
+    margin: 0.2rem 0.2rem;
+  }
+  
+  .popularity-description{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 0.2rem;
+  }
+  
+  .popularity-description h3 {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+  }
+  
+  .popularity-stars {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0.5rem;
+  }
+  
+  .popularity-stars .fas {
+    color:#0065FC;
+    
+  }
+  
+  .popularity-stars .far {
+    color: grey;
+  }
+  
+  /* "Les plus populaires" media queries */ 
+  
+  
+  @media (max-width: 1250px) {
+  
+    
+    .popularity-section {
+      width: 100%;
+      height: 100%;
+      grid-area: 1 / 1 / 2 / 2;
+      border-radius: 0;
+      
+    }
+      
+    .popularity-wrap {
+      flex-direction: row;
+    }
+  
+    .popularity-title {
+      margin: 4rem 0 2rem 3rem;
+    }
+    
+    .popularity-lodgement {
+      height: 12rem;
+      width: 30%;
+    
+    }
+    .popularity-lodgement img {
+      height: 97%;
+    }
+    
+    }
+  
+  
+    @media (max-width: 850px) { 
+  
+    .popularity-wrap {
+        flex-direction: column;
+      }
+   
+    .popularity-lodgement {
+      width: 93%;
+      box-shadow: none;
+      align-content: center;
+    }
+    }
+  
+  
+  
+    @media (max-width: 576px) { 
+  
+    .popularity-title {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem 2rem;
+      box-shadow: 0px 0px 6px 0px #0000003b;
+    }
+  
+  }
+  /* End "Les plus populaires" section */ 
+  
+  /* Begin "Activités à Marseille" section */ 
+  
+  .activity-section {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  
+  
+  .marseille-title {
+   font-size: 1.8rem;
+   margin: 3rem 0 3rem 3rem;
+  }
+  
+  .activity-wrap {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(8, 2rem);
+    margin: 1rem 2rem;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    justify-content: space-between;
+  }
+  
+  
+  .activity-card {
+    margin: 0.5rem;
+  }
+  
+  
+  .activity-card img {
+    border-top-left-radius: 15px;  
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .activity-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .activity-card h3 {
+    font-size: 0.9rem;
+    border-radius: 0 0 15px 15px;
+    padding: 1rem 0 1rem 1rem;
+    box-shadow: 0 0 20px #0000002e;
+    margin: -0.3rem 0 0 0;
+  }
+  
+  
+  
+  .card-1 {
+   grid-area: 1 / 1 / 9 / 2;
+  }
+  
+  .card-2 {
+   grid-area: 1 / 2 / 6 / 3; 
+  
+  }
+  .card-3 {
+    grid-area: 6 / 2 / 9 / 3;
+  } 
+  
+  .card-4 {
+   grid-area: 1 / 3 / 9 / 4;
+  
+  }
+  
+  .card-5 {
+    grid-area: 1 / 4 / 5 / 5;
+  }
+  
+  .card-6 {
+    grid-area: 5 / 4 / 9 / 5;
+  }
+  
+  
+  /* activity media queries */ 
+  
+  
+  @media (max-width: 800px) {
+    
+   .activity-wrap {
+  
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 12rem);
+  
+   }
+    
+   .card-1 {
+    grid-area: 1 / 1 / 2 / 2;
+   }
+   
+   .card-2 {
+    grid-area: 1 / 2 / 2 / 3; 
+   
+   }
+   .card-3 {
+     grid-area: 1 / 3 / 2 / 4;
+   }
+   
+   .card-4 {
+    grid-area: 2 / 1 / 3 / 2; 
+   
+   }
+   
+   .card-5 {
+     grid-area: 2 / 2 / 3 / 3;
+   }
+  
+   .card-6 {
+     grid-area: 2 / 3 / 3 / 3;
+   }
+   
+  
+  
+  }
+  
+  
+  
+  @media (max-width: 630px) {
+    
+    .activity-wrap {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 12rem);
+      justify-content: center;
+    }
+    
+    .card-1 {
+      grid-area: 1 / 1 / 2 / 2;
+     }
+     
+     .card-2 {
+      grid-area: 1 / 2 / 2 / 3; 
+     
+     }
+     .card-3 {
+       grid-area: 2 / 1 / 3 / 2;
+     }
+     
+     .card-4 {
+      grid-area: 2 / 2 / 3 / 3; 
+     
+     }
+     
+     .card-5 {
+       grid-area: 3 / 1 / 4 / 2;
+     }
+    
+     .card-6 {
+       grid-area: 3 / 2 / 4 / 3;
+     }
+    
+    
+    }
+    
+  
+  
+  @media (max-width: 576px) {
+  
+    .activity-wrap {
+      grid-template-columns: repeat(1, 106%);
+      grid-template-rows: repeat(6, 12rem);
+      grid-row-gap: 4rem;
+      justify-content: center;
+    }
+  
+    .marseille-title {
+      font-size: 1.8rem;
+      margin: 3rem 0 3rem 1.5rem;
+     }
+    
+    .card-1 {
+      grid-area: 1 / 1 / 2 / 2;
+     }
+     
+     .card-2 {
+      grid-area: 2 / 1 / 3 / 2; 
+     
+     }
+     .card-3 {
+       grid-area: 3 / 1 / 4 / 2;
+     }
+     
+     .card-4 {
+      grid-area: 4 / 1 / 5 / 2; 
+     
+     }
+     
+     .card-5 {
+       grid-area: 5 / 1 / 6 / 2;
+     }
+    
+     .card-6 {
+       grid-area: 6 / 1 / 7 / 2;
+     }
+  
+  }
+  
+  
+  
+  /* End "Activités à Marseille" section */ 
+  
+  
+  
+  /* Begin Footer */ 
+  
+  footer {
+    margin-top: 7rem;
+    background: #F2F2F2;
+    padding-bottom: 3rem;
+    
+  }
+  
+  .contenu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem 0;
+    color: black;
+    position: relative;
+    
+    
+  }
+  
+  .footer-bloc {
+    margin-top: 2.5rem;
+    width: 30%;
+    
+    
+    
+  }
+  
+  footer h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    white-space: nowrap; 
+  }
+  
+  .list {
+    line-height: 2rem;
+    white-space: nowrap;  
+  }
+  
+  
+  
+  .list li:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 770px) {
+  .contenu-footer {
+      flex-direction: row;
+      flex: 1 0 auto;
+      margin-left: 1%;
+      height: 100%;
+  }
+  }
+  
+  
+  @media (max-width: 576px) { 
+    .contenu-footer {
+      flex-direction: column;
+      margin-left: 2%;
+    }
+  
+  }
+  
+  
+  @media (max-width: 380px) { 
+    .contenu-footer {
+      margin-left: 4%;
+    }
+  
+  }
+  
+  
+  /* End Footer */ 
